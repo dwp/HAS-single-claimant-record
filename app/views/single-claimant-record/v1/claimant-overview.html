@@ -13,6 +13,7 @@
 
 {% block content %}
 
+
 <div class="app-pane__body">
 
 <div class="app-pane__subnav">
@@ -72,17 +73,33 @@
         </dl>
       </section>
 
+      <section role="contentinfo" aria-label="important notification">
+        <div class="govuk-notification-banner govuk-!-margin-top-4" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Reminder
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-notification-banner__heading">
+              Awaiting questionnaire
+            </p>
+            <p>Universal Credit health questionnaire issued 12 December 2021</p>
+          </div>
+        </div>
+      </section>
+
       <div class="govuk-grid-column-one-half govuk-!-padding-right-4 govuk-!-padding-top-4">
         
         <div class="card">
           <h2 class="govuk-heading-m card__header">
-            Recent claims
+            Recent cases
           </h2>
           <div class="card__body">
             <div class="card__content border-bottom govuk-!-margin-bottom-4">
               <h3 class="govuk-heading-s"><a href="esa-claim-detail" aria-describedby="referral-detail">Employment Support Allowance</a></h3>
               <p class="govuk-hint">Submitted 19 November 2021</p>
-              <div class="status govuk-!-margin-bottom-4"><strong class="govuk-tag">Assessment Booked</strong></div>
+              <div class="status govuk-!-margin-bottom-4"><strong class="govuk-tag">Assessment booked</strong></div>
             </div>
 
             <div class="card__content">
