@@ -383,11 +383,11 @@ $govuk-assets-path: '/govuk/assets/';
   border-bottom: 0px;
 }
 
-.key-details-bar {
+.new-key-details-bar {
   width: 1200px;
 }
 
-.key-details-bar .key-details-bar__key-details {
+.new-key-details-bar .new-key-details-bar__key-details {
   margin: 0 auto;
   padding: 0px 30px 20px 0px;
   position: relative;
@@ -395,23 +395,23 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 @media (max-width: 670px) {
-  .key-details-bar .key-details-bar__key-details {
+  .new-key-details-bar .new-key-details-bar__key-details {
     padding: 20px 15px;
   }
 }
 
-.key-details-bar .key-details-bar__key-details * {
+.new-key-details-bar .new-key-details-bar__key-details * {
   color: #000;
 }
 
-.key-details-bar .key-details-bar__key-details .key-details-bar__top-block::after,
-.key-details-bar .key-details-bar__key-details .key-details-bar__bottom-block::after {
+.new-key-details-bar .new-key-details-bar__key-details .new-key-details-bar__top-block::after,
+.new-key-details-bar .new-key-details-bar__key-details .new-key-details-bar__bottom-block::after {
   clear: both;
   content: ' ';
   display: block;
 }
 
-.key-details-bar .key-details-bar__key-details .key-details-bar__bottom-block {
+.new-key-details-bar .new-key-details-bar__key-details .new-key-details-bar__bottom-block {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   content: ' ';
   padding-top: 10px;
@@ -419,13 +419,13 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 @media (max-width: 670px) {
-  .key-details-bar .key-details-bar__key-details .key-details-bar__bottom-block {
+  .new-key-details-bar .new-key-details-bar__key-details .new-key-details-bar__bottom-block {
     border: 0;
   }
 }
 
-.key-details-bar .key-details-bar__key-details dd,
-.key-details-bar .key-details-bar__key-details dt {
+.new-key-details-bar .new-key-details-bar__key-details dd,
+.new-key-details-bar .new-key-details-bar__key-details dt {
   float: left;
   font-size: 19px;
   margin-right: 5px;
@@ -433,34 +433,34 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 @media (max-width: 670px) {
-  .key-details-bar .key-details-bar__key-details dd,
-  .key-details-bar .key-details-bar__key-details dt {
+  .new-key-details-bar .new-key-details-bar__key-details dd,
+  .new-key-details-bar .new-key-details-bar__key-details dt {
     float: none;
     font-size: 16px;
     margin: 0;
   }
 }
 
-.key-details-bar .key-details-bar__key-details dd {
+.new-key-details-bar .new-key-details-bar__key-details dd {
   margin-right: 20px;
 }
 
-.key-details-bar .key-details-bar__key-details .key-details-bar__bottom-block dd {
+.new-key-details-bar .new-key-details-bar__key-details .new-key-details-bar__bottom-block dd {
   margin-right: 0;
   margin-inline-start: 0;
 
 }
 
 @media (max-width: 670px) {
-  .key-details-bar .key-details-bar__key-details dd {
+  .new-key-details-bar .new-key-details-bar__key-details dd {
     margin-bottom: 20px;
   }
-  .key-details-bar .key-details-bar__key-details dd:last-of-type {
+  .new-key-details-bar .new-key-details-bar__key-details dd:last-of-type {
     margin-bottom: 0;
   }
 }
 
-.key-details-bar .key-details-bar__key-details .key-details-bar__name {
+.new-key-details-bar .new-key-details-bar__key-details .new-key-details-bar__name {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11111;
@@ -468,7 +468,7 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 @media (max-width: 670px) {
-  .key-details-bar .key-details-bar__key-details .key-details-bar__name {
+  .new-key-details-bar .new-key-details-bar__key-details .new-key-details-bar__name {
     font-size: 24px;
     line-height: 1.04167;
     float: left;
@@ -476,14 +476,14 @@ $govuk-assets-path: '/govuk/assets/';
   }
 }
 
-.key-details-bar .key-details-bar__key-details .key-details-bar__nino {
+.new-key-details-bar .new-key-details-bar__key-details .new-key-details-bar__nino {
   font-size: 24px;
   line-height: 1;
   margin-top: 12px;
 }
 
 @media (max-width: 670px) {
-  .key-details-bar .key-details-bar__key-details .key-details-bar__nino {
+  .new-key-details-bar .new-key-details-bar__key-details .new-key-details-bar__nino {
     font-size: 18px;
     float: left;
     margin: 5px 0 0 0;
