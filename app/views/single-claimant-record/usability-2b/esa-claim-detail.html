@@ -19,8 +19,8 @@
   <nav class="app-subnav" aria-labelledby="app-subnav-heading">
     <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
     <ul class="app-subnav__section">
-      <li class="app-subnav__section-item app-subnav__section-item--current">
-        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Overview</a>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="case-history">Case history</a>
       </li>
       <li class="app-subnav__section-item">
         <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-details">Claimant details</a>
@@ -33,9 +33,6 @@
       </li>
       <li class="app-subnav__section-item">
         <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Evidence</a>
-      </li>
-      <li class="app-subnav__section-item">
-        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="case-history">Case history</a>
       </li>
     </ul>
   </nav>
@@ -71,28 +68,83 @@
         </dl>
       </section>
 
-      <div class="govuk-!-padding-top-4">
-        
-        <div class="card">
-          <h2 class="govuk-heading-m card__header">
-            Recent claims
-          </h2>
-          <div class="card__body">
-            <div class="card__content border-bottom govuk-!-margin-bottom-4">
-              <h3 class="govuk-heading-s"><a href="esa-claim-detail" aria-describedby="referral-detail">Employment Support Allowance</a></h3>
-              <p class="govuk-hint">Submitted 19 November 2021</p>
-              <div class="status govuk-!-margin-bottom-4"><strong class="govuk-tag">Assessment Booked</strong></div>
-            </div>
+      <div class="govuk-grid-column-two-thirds-from-desktop">
 
-            <div class="card__content">
-              <h3 class="govuk-heading-s"><a href="#" aria-describedby="referral-detail">Universal Credit</a></h3>
-              <p class="govuk-hint">Submitted 10 December 2021</p>
-              <div class="status"><strong class="govuk-tag">Awaiting Questionnaire</strong></div>
-            </div>
+        <h2 class="govuk-heading-m govuk-!-margin-top-4">Case information</h2>
+  
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Date referred
+            </dt>
+            <dd class="govuk-summary-list__value">
+              10 December 2021
+            </dd>
           </div>
-        </div>
-        
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Case type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              New
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Benefit type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Employment Support Allowance
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Assessment centre
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Tresco House
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Case manager
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Zoe Hall
+            </dd>
+          </div>
+        </dl>
+  
       </div>
+  
+      <div class="govuk-grid-column-one-third">
+  
+        <aside class="app-related-items govuk-!-margin-top-4" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            What you can do next
+          </h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list">
+              <li>
+                <a href="#">Start assessment</a>
+              </li>
+              <li>
+                <a href="#">View claimant documents</a>
+              </li>
+              <li>
+                <a href="update-status">Update status</a>
+              </li>
+              <li>
+                <a href="assign-list-review">Move to another caseload</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+  
+      </div>
+
+      
+
       
 
       

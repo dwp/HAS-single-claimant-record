@@ -20,7 +20,7 @@
     <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
     <ul class="app-subnav__section">
       <li class="app-subnav__section-item app-subnav__section-item--current">
-        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Overview</a>
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Case history</a>
       </li>
       <li class="app-subnav__section-item">
         <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-details">Claimant details</a>
@@ -34,9 +34,6 @@
       <li class="app-subnav__section-item">
         <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Evidence</a>
       </li>
-      <li class="app-subnav__section-item">
-        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="case-history">Case history</a>
-      </li>
     </ul>
   </nav>
 </div>
@@ -44,7 +41,7 @@
 <div class="govuk-grid-row overview">
     <div class="govuk-grid-column-full">
 
-      <h1 class="govuk-visually-hidden">Overview of claimant</h1>
+      <h1 class="govuk-visually-hidden">Full list of claimant information</h1>
 
       <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
         <dl class="new-key-details-bar__key-details">
@@ -71,31 +68,45 @@
         </dl>
       </section>
 
-      <div class="govuk-!-padding-top-4">
-        
-        <div class="card">
-          <h2 class="govuk-heading-m card__header">
-            Recent claims
-          </h2>
-          <div class="card__body">
-            <div class="card__content border-bottom govuk-!-margin-bottom-4">
-              <h3 class="govuk-heading-s"><a href="esa-claim-detail" aria-describedby="referral-detail">Employment Support Allowance</a></h3>
-              <p class="govuk-hint">Submitted 19 November 2021</p>
-              <div class="status govuk-!-margin-bottom-4"><strong class="govuk-tag">Assessment Booked</strong></div>
-            </div>
+      <!-- <div class="govuk-grid-column-two-thirds"> -->
 
-            <div class="card__content">
-              <h3 class="govuk-heading-s"><a href="#" aria-describedby="referral-detail">Universal Credit</a></h3>
-              <p class="govuk-hint">Submitted 10 December 2021</p>
-              <div class="status"><strong class="govuk-tag">Awaiting Questionnaire</strong></div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      
+        <h2 class="govuk-heading-l govuk-!-margin-top-6">Case history</h2>
 
-      
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Benefit</th>
+              <th scope="col" class="govuk-table__header">Referral date</th>
+              <th scope="col" class="govuk-table__header">SRTI</th>
+              <th scope="col" class="govuk-table__header">Status</th>
+              <th scope="col" class="govuk-table__header">Case completed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="esa-claim-detail" aria-describedby="claim-detail">Employment Support Allowance</a></td>
+              <td class="govuk-table__cell">10 Feb 2021</td>
+              <td class="govuk-table__cell">No</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag" id="Status 4">Assessment Booked</strong></td>
+              <td class="govuk-table__cell">-</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Universal Credit</a></td>
+              <td class="govuk-table__cell">10 Feb 2021</td>
+              <td class="govuk-table__cell">No</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag" id="Status 6">Awaiting Questionnaire</strong></td>
+              <td class="govuk-table__cell">-</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Universal Credit</a></td>
+              <td class="govuk-table__cell">10 Feb 2021</td>
+              <td class="govuk-table__cell">No</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 6">Archived</strong></td>
+              <td class="govuk-table__cell">19 Sep 2021</td>
+            </tr>
+          </tbody>
+        </table>
+      <!-- </div> -->
 
     </div>
   </div>
