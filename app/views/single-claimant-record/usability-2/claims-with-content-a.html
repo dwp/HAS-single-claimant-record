@@ -19,8 +19,8 @@
   <nav class="app-subnav" aria-labelledby="app-subnav-heading">
     <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
     <ul class="app-subnav__section">
-      <li class="app-subnav__section-item">
-        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claims">Claims</a>
+      <li class="app-subnav__section-item app-subnav__section-item--current">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Benefits overview</a>
       </li>
       <li class="app-subnav__section-item">
         <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-details">Claimant details</a>
@@ -41,7 +41,7 @@
 <div class="govuk-grid-row overview">
     <div class="govuk-grid-column-full">
 
-      <h1 class="govuk-visually-hidden">Overview of claimant</h1>
+      <h1 class="govuk-visually-hidden">Full list of Benefits overview information</h1>
 
       <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
         <dl class="new-key-details-bar__key-details">
@@ -68,86 +68,41 @@
         </dl>
       </section>
 
-      <div class="govuk-grid-column-two-thirds-from-desktop">
+      <!-- <div class="govuk-grid-column-two-thirds"> -->
 
-        <h2 class="govuk-heading-m govuk-!-margin-top-4">Case information</h2>
-  
-        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Date referred
-            </dt>
-            <dd class="govuk-summary-list__value">
-              10 December 2021
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Case type
-            </dt>
-            <dd class="govuk-summary-list__value">
-              New
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Benefit type
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Employment Support Allowance
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Assessment centre
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Tresco House
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Case manager
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Zoe Hall
-            </dd>
-          </div>
-        </dl>
-  
-      </div>
-  
-      <div class="govuk-grid-column-one-third">
-  
-        <aside class="app-related-items govuk-!-margin-top-4" role="complementary">
-          <h2 class="govuk-heading-m" id="subsection-title">
-            What you can do next
-          </h2>
-          <nav role="navigation" aria-labelledby="subsection-title">
-            <ul class="govuk-list">
-              <li>
-                <a href="#">Start assessment</a>
-              </li>
-              <!-- <li>
-                <a href="#">View claimant documents</a>
-              </li> -->
-              <li>
-                <a href="#">Update status</a>
-              </li>
-              <li>
-                <a href="#">Move to another caseload</a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-  
-      </div>
+        <h2 class="govuk-heading-m govuk-!-margin-top-6">Benefits overview</h2>
 
-      
-
-      
-
-      
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Benefit</th>
+              <th scope="col" class="govuk-table__header">Referral date</th>
+              <th scope="col" class="govuk-table__header">Status</th>
+              <th scope="col" class="govuk-table__header">Next action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="esa-claim-detail" aria-describedby="claim-detail">Employment Support Allowance</a></td>
+              <td class="govuk-table__cell">10 Feb 2021</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag" id="Status 4">Assessment Booked</strong></td>
+              <td class="govuk-table__cell">2 days</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Universal Credit</a></td>
+              <td class="govuk-table__cell">10 Feb 2021</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag" id="Status 6">Awaiting Questionnaire</strong></td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" id="overdue">2 days overdue</strong></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Universal Credit</a></td>
+              <td class="govuk-table__cell">10 Feb 2021</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 6">Archived</strong></td>
+              <td class="govuk-table__cell">-</td>
+            </tr>
+          </tbody>
+        </table>
+      <!-- </div> -->
 
     </div>
   </div>
