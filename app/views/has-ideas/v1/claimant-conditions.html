@@ -20,14 +20,14 @@
   <nav class="app-subnav" aria-labelledby="app-subnav-heading">
     <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
     <ul class="app-subnav__section">
-      <li class="app-subnav__section-item app-subnav__section-item--current">
-        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Overview</a>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-overview">Overview</a>
       </li>
       <li class="app-subnav__section-item">
         <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-details">Claimant details</a>
       </li>
-      <li class="app-subnav__section-item">
-        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-conditions">Conditions</a>
+      <li class="app-subnav__section-item app-subnav__section-item--current">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Conditions</a>
       </li>
       <li class="app-subnav__section-item">
         <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-medications">Medications</a>
@@ -80,20 +80,34 @@
 
       <div class="govuk-grid-column-two-thirds govuk-!-padding-left-0">
 
-        <h2 class="govuk-heading-m govuk-!-margin-top-6">Fibromyalgia</h2>
-        <p>Condition started: 20 August 2018</p>
-        <h3 class="govuk-heading-s govuk-!-margin-top-2">Description</h3>
-        <p>Jane has serious Fibromyalgia that has a big effect on her mobility. She has muscle stiffness, particularly in her legs, and struggles to be able to sleep due to fatigue. Has reported variable instances of fibro-fog and IBS that may be linked in with other conditions</p>
-        <h3 class="govuk-heading-s govuk-!-margin-top-2">Supporting evidence</h3>
+        <div class="card govuk-!-margin-top-8">
+            <h2 class="govuk-heading-m card__header">
+                Fibromyalgia
+            </h2>
+            <div class="card__body">
+              <div class="card__content govuk-!-margin-bottom-4">
+                <p class="govuk-hint">Condition diagnosed: 20 August 2018</p>
+                <div class="status govuk-!-margin-bottom-4"><strong class="govuk-tag">Long term</strong></div>
+                <p>Jane has serious Fibromyalgia that has a big effect on her mobility. She has muscle stiffness, particularly in her legs, and struggles to be able to sleep due to fatigue. Has reported variable instances of fibro-fog and IBS that may be linked in with other conditions.</p>
+                <h3 class="govuk-heading-s govuk-!-margin-top-2">Supporting evidence</h3>
+            </div>
+            </div>
+          </div>
 
-        <hr>
-
-        <h2 class="govuk-heading-m govuk-!-margin-top-6">Chrons disease</h2>
-        <p>Condition started: 12 February 2011</p>
-        <h3 class="govuk-heading-s govuk-!-margin-top-2">Description</h3>
-        <p>Most recent update from specialist says that symptoms are mils, controlled mainly by dietary restrictions. Was resections in 2017 following a large flare up of symptoms.</p>
-        <h3 class="govuk-heading-s govuk-!-margin-top-2">Supporting evidence</h3>
-
+          <div class="card govuk-!-margin-top-4">
+            <h2 class="govuk-heading-m card__header">
+                Chrons' disease
+            </h2>
+            <div class="card__body">
+              <div class="card__content govuk-!-margin-bottom-4">
+                <p class="govuk-hint">Condition diagnosed: 12 February 2011</p>
+                <div class="status govuk-!-margin-bottom-4"><strong class="govuk-tag">Long term</strong></div>
+                <p>Most recent update from specialist says that symptoms are mils, controlled mainly by dietary restrictions. Was resections in 2017 following a large flare up of symptoms.</p>
+                <h3 class="govuk-heading-s govuk-!-margin-top-2">Supporting evidence</h3>
+            </div>
+            </div>
+          </div>
+        
 
       </div>
 
