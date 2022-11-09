@@ -542,3 +542,8 @@ $govuk-assets-path: '/govuk/assets/';
     max-width: 850px;
 }
 
+/*** Top nav override - do not push to live! ***/
+
+.govuk-header__navigation {
+  background-color: #000;
+}
