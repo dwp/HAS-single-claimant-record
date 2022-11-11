@@ -1,0 +1,154 @@
+{% extends "layout-primary-nav-hcp-senior.html" %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="app-pane__body">
+
+
+<div class="app-pane__subnav">
+  <nav class="app-side-nav  app-subnav" aria-labelledby="app-subnav-heading">
+    <div class="nhsuk-back-link app-u-hide-mobile app-side-nav__back govuk-!-margin-bottom-4">
+      <a class="nhsuk-back-link__link" href="claimant-overview">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+        </svg>
+        Claimant overview
+      </a>
+    </div>
+
+    <h2 class="app-side-nav__heading">Assess</h2>
+    <ul class="app-subnav__section">
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Medication</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Conditions</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Evidence</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Daily living</a>
+        <ul class="app-subnav__section app-subnav__section--nested">
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Preparing Food
+            </a>
+          </li>
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Taking nutrition
+            </a>
+          </li>
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Managing therapy
+            </a>
+          </li>
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Washing and bathing
+            </a>
+          </li>
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Managing toilet needs
+            </a>
+          </li>
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Dressing and undressing
+            </a>
+          </li><li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Communicating verbally
+            </a>
+          </li>
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Reading and understanding signs, symbols and words
+            </a>
+          </li><li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Engaging face to face
+            </a>
+          </li>
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Budgeting
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Mobility</a>
+        <ul class="app-subnav__section app-subnav__section--nested">
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Planing and following journeys
+            </a>
+          </li>
+          <li class="app-subnav__section-item">
+            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">
+              Moving around
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+</div>
+
+<div class="govuk-grid-row overview">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-visually-hidden">Full list of claimant information</h1>
+
+      <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
+        <dl class="new-key-details-bar__key-details">
+          <div class="new-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="new-key-details-bar__name">Jane Doe</dd>
+      
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="new-key-details-bar__nino">RN 00 04 26 D</dd>
+      
+          </div>
+      
+          <div class="new-key-details-bar__bottom-block">
+            <dt class="govuk-visually-hidden">Claimant markers:</dt>
+            <dd>
+              <strong class="govuk-tag govuk-tag--purple">Terminally ill</strong>
+              <!-- <strong class="govuk-tag govuk-tag--yellow">Additional support</strong> -->
+              <strong class="govuk-tag govuk-tag--green">Appointee</strong>
+              <strong class="govuk-tag govuk-tag--blue">Dual claim</strong>
+              <!-- <strong class="govuk-tag govuk-tag--pink">Unacceptable behaviour</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--red">Deceased</strong> -->
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- <div class="govuk-grid-column-two-thirds"> -->
+
+      
+
+        <h2 class="govuk-heading-m  govuk-!-margin-top-6">Lime space</h2>
+        
+          
+
+      
+      <!-- </div> -->
+
+    </div>
+  </div>
+</div>
+{% endblock %}
