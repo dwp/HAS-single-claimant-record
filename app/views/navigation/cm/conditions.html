@@ -1,0 +1,180 @@
+{% extends "layout-primary-nav-cm.html" %}
+
+{% block pageTitle %}
+Claimant details
+{% endblock %}
+
+{% block content %}
+
+
+<div class="app-pane__body">
+
+  <div class="app-pane__subnav">
+    <nav class="app-subnav" aria-labelledby="app-subnav-heading">
+      <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
+      <ul class="app-subnav__section">
+        <li class="app-subnav__section-item app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-overview.html">Claimant
+            details</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Health professionals</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Support and communication</a>
+        </li>
+        <li class="app-subnav__section-item app-subnav__section-item--current">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Conditions</a>
+          <ul class="app-subnav__section app-subnav__section--nested">
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#diabetes">
+                Diabetes
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#prostate-cancer">
+                Prostate Cancer
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#angina">
+                Angina
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#COPD">
+                COPD
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="daily-living.html">Daily living</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Mobility</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Additional information</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Timeline</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="make-recommendation.html">Make recommendation</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="govuk-grid-row overview">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-visually-hidden">Full list of claimant information</h1>
+
+      <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
+        <dl class="new-key-details-bar__key-details">
+          <div class="new-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="new-key-details-bar__name">Jane Doe</dd>
+
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="new-key-details-bar__nino">RN 00 04 26 D</dd>
+
+          </div>
+
+          <div class="new-key-details-bar__bottom-block">
+            <dt class="govuk-visually-hidden">Claimant markers:</dt>
+            <dd>
+              <strong class="govuk-tag govuk-tag--purple">Terminally ill</strong>
+              <!-- <strong class="govuk-tag govuk-tag--yellow">Additional support</strong> -->
+              <strong class="govuk-tag govuk-tag--green">Appointee</strong>
+              <strong class="govuk-tag govuk-tag--blue">Dual claim</strong>
+              <!-- <strong class="govuk-tag govuk-tag--pink">Unacceptable behaviour</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--red">Deceased</strong> -->
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+
+            <h2 class="govuk-heading-l">
+              Conditions
+            </h2>
+
+            <h3 class="govuk-heading-m" id="diabetes">
+              Diabetes
+            </h3>
+
+            <h4 class="govuk-heading-s">Approximate start date</h4>
+            <p>14 weeks ago</p>
+
+            <h4 class="govuk-heading-s">Tell us about this condition</h4>
+
+            <p>
+              Short paragraph from the claimant about their medication / tablets and the dosage.
+              Any treatments you have had, you are currently having or have planned for the future (include private as
+              well as NHS funded treatments).
+            </p>
+
+            <h3 class="govuk-heading-m" id="prostate-cancer">
+              Prostate cancer
+            </h3>
+
+            <h4 class="govuk-heading-s">Approximate start date</h4>
+            <p>20 July 1990</p>
+
+            <h4 class="govuk-heading-s">Tell us about this condition</h4>
+
+            <p>
+              Short paragraph from the claimant about their medication / tablets and the dosage.
+              Any treatments you have had, you are currently having or have planned for the future (include private as
+              well as NHS funded treatments).
+            </p>
+
+            <h3 class="govuk-heading-m" id="angina">
+              Angina
+            </h3>
+
+            <h4 class="govuk-heading-s">Approximate start date</h4>
+            <p>1 March 1995</p>
+
+            <h4 class="govuk-heading-s">Tell us about this condition</h4>
+
+            <p>
+              Short paragraph from the claimant about their medication / tablets and the dosage.
+              Any treatments you have had, you are currently having or have planned for the future (include private as
+              well as NHS funded treatments).
+            </p>
+
+            <h3 class="govuk-heading-m" id="COPD">
+              COPD
+            </h3>
+
+            <h4 class="govuk-heading-s">Approximate start date</h4>
+            <p>20 December 1999</p>
+
+            <h4 class="govuk-heading-s">Tell us about this condition</h4>
+
+            <p>
+              Short paragraph from the claimant about their medication / tablets and the dosage.
+              Any treatments you have had, you are currently having or have planned for the future (include private as
+              well as NHS funded treatments).
+            </p>
+
+        </div>
+      </div>
+    </div>
+    {% endblock %}

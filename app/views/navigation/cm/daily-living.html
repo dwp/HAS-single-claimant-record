@@ -1,0 +1,231 @@
+{% extends "layout-primary-nav-cm.html" %}
+
+{% block pageTitle %}
+Claimant details
+{% endblock %}
+
+{% block content %}
+
+
+<div class="app-pane__body">
+
+  <div class="app-pane__subnav">
+    <nav class="app-subnav" aria-labelledby="app-subnav-heading">
+      <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
+      <ul class="app-subnav__section">
+        <li class="app-subnav__section-item app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="claimant-overview.html">Claimant
+            details</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Health
+            professionals</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Support
+            and communication</a>
+        </li>
+        <li class="app-subnav__section-item app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="conditions.html">Conditions</a>
+        </li>
+        <li class="app-subnav__section-item--current">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="daily-living.html">Daily living</a>
+          <ul class="app-subnav__section app-subnav__section--nested">
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#preparing-food">
+                Preparing Food
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#eating">
+                Eating and drinking
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#treatments">
+                Managing treatments
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#washing">
+                Washing and bathing
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#toilet">
+                Using the toilet and managing incontinence
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#dressing">
+                Dressing and undressing
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#talking">
+                Talking, listening and understanding
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#reading">
+                Reading
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#mixing">
+                Mixing with other people
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+                href="#money">
+                Managing money
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Mobility</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Additional information</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Timeline</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="make-recommendation.html">Make recommendation</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="govuk-grid-row overview">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-visually-hidden">Full list of claimant information</h1>
+
+      <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
+        <dl class="new-key-details-bar__key-details">
+          <div class="new-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="new-key-details-bar__name">Jane Doe</dd>
+
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="new-key-details-bar__nino">RN 00 04 26 D</dd>
+
+          </div>
+
+          <div class="new-key-details-bar__bottom-block">
+            <dt class="govuk-visually-hidden">Claimant markers:</dt>
+            <dd>
+              <strong class="govuk-tag govuk-tag--purple">Terminally ill</strong>
+              <!-- <strong class="govuk-tag govuk-tag--yellow">Additional support</strong> -->
+              <strong class="govuk-tag govuk-tag--green">Appointee</strong>
+              <strong class="govuk-tag govuk-tag--blue">Dual claim</strong>
+              <!-- <strong class="govuk-tag govuk-tag--pink">Unacceptable behaviour</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--red">Deceased</strong> -->
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+
+            <h2 class="govuk-heading-l">
+              Daily living
+            </h2>
+
+            <h3 class="govuk-heading-m" id="preparing-food">
+              Preparing food
+            </h3>
+
+            <h4 class="govuk-heading-s">Does your condition affect you preparing food, or prevent you from doing so?
+            </h4>
+            <p class="govuk-body">Yes</p>
+            <h4 class="govuk-heading-s">Tell us about the difficulties you have with preparing food and how you manage
+              them</h4>
+            <p class="govuk-body">About twice a year, for about 3 weeks at a time I have difficulty remembering to turn
+              the hob off because I get too distracted to complete tasks like this. My partner supervises me in the
+              kitchen to make sure I stay safe.
+
+              Every day, I have difficulty standing while preparing food because my leg is too stiff and painful. I need
+              to use a perching stool so I can rest my leg while preparing food.
+            </p>
+
+            <h3 class="govuk-heading-m" id="eating">
+              Eating and drinking
+            </h3>
+
+            <h4 class="govuk-heading-s">Does your condition affect you eating and drinking?</h4>
+            <p class="govuk-body">Yes</p>
+            <h4 class="govuk-heading-s">Do you use a feeding tube or similar device to eat or drink?</h4>
+            <p class="govuk-body">No</p>
+            <h4 class="govuk-heading-s">Tell us about the difficulties you have with eating and drinking and how you
+              manage them </h4>
+            <p class="govuk-body">At least 5 times a week, I have difficulty cutting up my food at dinner because my
+              right hand hurts when I hold a knife. I need adapted cutlery so I can cut up my food myself.
+              I always have difficulty eating enough food at mealtimes to keep healthy because I am preoccupied with my
+              weight and get very upset. My partner prompts me to manage my portion size and eat my meals.
+            </p>
+
+            <h3 class="govuk-heading-m" id="treatments">
+              Managing treatments
+            </h3>
+
+            <h4 class="govuk-heading-s">Does your condition affect you managing your treatments?</h4>
+            <p class="govuk-body">Yes</p>
+            <h4 class="govuk-heading-s">Tell us about the difficulties you have with monitoring changes in your health
+              condition or disability and taking medication, and how you manage them
+            </h4>
+            <p class="govuk-body">About four days a week, I have trouble taking my arthritis medication because my
+              wrists hurt when I try to open the pill bottle. I put my pills in a dosette box so I do not need to open
+              the pill bottle on days when I am unable. Every evening, I have trouble monitoring my blood glucose levels
+              because I forget and get confused on how to do it. My partner prompts me and helps me measure my blood
+              glucose levels in the evening.
+            </p>
+            <h4 class="govuk-heading-s">Tell us about any therapies you take at home that need the help of another
+              person
+            </h4>
+            <p class="govuk-body">I need home dialysis for 3 hours on Monday and Friday each week. My partner helps me
+              set up the dialysis equipment and supervises me during the dialysis to make sure I stay safe.
+            </p>
+
+            <h3 class="govuk-heading-m" id="washing">
+              Washing and bathing
+            </h3>
+
+            <h4 class="govuk-heading-s">Does your condition affect you washing and bathing?</h4>
+            <p class="govuk-body">Yes</p>
+            <h4 class="govuk-heading-s">Tell us about the difficulties you have with washing and bathing and how you
+              manage them</h4>
+            <p class="govuk-body">For about three months of the year, I cannot motivate myself to bathe because I feel
+              too depressed. My parents prompt me for several minutes every day to go and shower when I cannot motivate
+              myself.
+              About five days a week, I have difficulty washing my lower body because my back is too stiff and painful.
+              I use a shower seat so that I can rest my back when I shower.
+            </p>
+
+        </div>
+      </div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,213 @@
+{% extends "layout-primary-nav-cm.html" %}
+
+{% block pageTitle %}
+Claimant details
+{% endblock %}
+
+{% block content %}
+
+
+<div class="app-pane__body">
+
+  <div class="app-pane__subnav">
+    <nav class="app-subnav" aria-labelledby="app-subnav-heading">
+      <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
+      <ul class="app-subnav__section">
+        <li class="app-subnav__section-item app-subnav__section-item--current">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Claimant
+            details</a>
+          <ul class="app-subnav__section app-subnav__section--nested">
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#contact">
+                Contact details
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#nationality">
+                Nationality
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Health professionals</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Support and communication</a>
+        </li>
+        <li class="app-subnav__section-item app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="conditions.html">Conditions</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="daily-living.html">Daily living</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Mobility</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Additional information</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Timeline</a>
+        </li>
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="make-recommendation.html">Make recommendation</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="govuk-grid-row overview">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-visually-hidden">Full list of claimant information</h1>
+
+      <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
+        <dl class="new-key-details-bar__key-details">
+          <div class="new-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="new-key-details-bar__name">Jane Doe</dd>
+
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="new-key-details-bar__nino">RN 00 04 26 D</dd>
+
+          </div>
+
+          <div class="new-key-details-bar__bottom-block">
+            <dt class="govuk-visually-hidden">Claimant markers:</dt>
+            <dd>
+              <strong class="govuk-tag govuk-tag--purple">Terminally ill</strong>
+              <!-- <strong class="govuk-tag govuk-tag--yellow">Additional support</strong> -->
+              <strong class="govuk-tag govuk-tag--green">Appointee</strong>
+              <strong class="govuk-tag govuk-tag--blue">Dual claim</strong>
+              <!-- <strong class="govuk-tag govuk-tag--pink">Unacceptable behaviour</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--red">Deceased</strong> -->
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-m" id="contact">Contact details</h2>
+
+        <table class="govuk-table">
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header" width="42%">Claim date</td>
+              <td class="govuk-table__cell">20 November 2021</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">National Insurance number</td>
+              <td class="govuk-table__cell">QQ 12 34 56 C</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Name</td>
+              <td class="govuk-table__cell">Jane Doe</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Age</td>
+              <td class="govuk-table__cell">50</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Date of birth</td>
+              <td class="govuk-table__cell">4 June 1972</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Home address</td>
+              <td class="govuk-table__cell">12 Pearl Street <br>
+                Bristol <br>
+                BS3 4AB </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Can we write to you at this address?</td>
+              <td class="govuk-table__cell">No</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Correspondence address</td>
+              <td class="govuk-table__cell">11 Pearl Street<br>
+                Bristol <br>
+                BS3 4AB</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Mobile phone number</td>
+              <td class="govuk-table__cell">07777 7777777</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Do you want to receive text message updates about your claim?</td>
+              <td class="govuk-table__cell">No</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Alternative phone number</td>
+              <td class="govuk-table__cell">0777 77777778</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Textphone</td>
+              <td class="govuk-table__cell">0777 77777778</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Email address</td>
+              <td class="govuk-table__cell">jane.doe72@outlook.com</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Are you currently staying in health or care accommodation?</td>
+              <td class="govuk-table__cell">No</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">When did you go into this health or care accommodation?</td>
+              <td class="govuk-table__cell">Not applicable</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Health or care accommodation address</td>
+              <td class="govuk-table__cell">Not applicable</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h2 class="govuk-heading-m" id="nationality">Nationality</h2>
+        <table class="govuk-table">
+
+          <thead class="govuk-table__head"></thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Nationality</td>
+              <td class="govuk-table__cell">Swiss</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header" width="42%">Did you start living in the UK before 1 January 2021?</td>
+              <td class="govuk-table__cell">Yes</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Have you been in the UK for at least 2 of the last 3 years?</td>
+              <td class="govuk-table__cell">Yes</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Are you or a family member receiving any pension or benefit from another
+                European Economic Area (EEA) state or Switzerland?</td>
+              <td class="govuk-table__cell">No</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__header">Are you or a family member working, paying, or have paid insurance to
+                another European Economic Area (EEA) state or Switzerland?</td>
+              <td class="govuk-table__cell">No</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+{% endblock %}
