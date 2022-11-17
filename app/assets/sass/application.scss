@@ -244,6 +244,10 @@ $govuk-assets-path: '/govuk/assets/';
 
 .govuk-header__navigation-item--active a:link, .govuk-header__navigation-item--active a:hover, .govuk-header__navigation-item--active a:visited  {
   color: #fff!important;
+  font-weight: 600!important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.6em!important;
 }
 
 .govuk-header__link:link, .govuk-header__link:visited {
@@ -255,7 +259,8 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .govuk-header__link:hover {
-  text-underline-offset: 0.5em!important;
+  text-underline-offset: 0.6em!important;
+  text-decoration-thickness: 2px;
 }
 
 // Styling for timeline
