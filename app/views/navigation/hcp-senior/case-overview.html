@@ -1,0 +1,235 @@
+{% extends "layout-primary-nav-hcp-senior.html" %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="app-pane__body">
+
+<div class="app-pane__subnav">
+  <nav class="app-subnav" aria-labelledby="app-subnav-heading">
+    <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
+    <ul class="app-subnav__section">
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Overview</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-overview">Claimant details</a>
+      </li>
+      <li class="app-subnav__section-item app-subnav__section-item--current">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Case details</a>
+          <ul class="app-subnav__section app-subnav__section--nested">
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#consent">
+                    Consent
+                  </a>
+                </li>
+                <li class="app-subnav__section-item">
+                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#specialist">
+                    Specialist details
+                  </a>
+                </li>
+          </ul>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Appointments</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Timeline</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="review">Assess</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="govuk-grid-row overview">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-visually-hidden">Full list of claimant information</h1>
+
+      <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
+        <dl class="new-key-details-bar__key-details">
+          <div class="new-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="new-key-details-bar__name">Jane Doe</dd>
+      
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="new-key-details-bar__nino">RN 00 04 26 D</dd>
+      
+          </div>
+      
+          <div class="new-key-details-bar__bottom-block">
+            <dt class="govuk-visually-hidden">Claimant markers:</dt>
+            <dd>
+              <strong class="govuk-tag govuk-tag--purple">Terminally ill</strong>
+              <!-- <strong class="govuk-tag govuk-tag--yellow">Additional support</strong> -->
+              <strong class="govuk-tag govuk-tag--green">Appointee</strong>
+              <strong class="govuk-tag govuk-tag--blue">Dual claim</strong>
+              <!-- <strong class="govuk-tag govuk-tag--pink">Unacceptable behaviour</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--red">Deceased</strong> -->
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- <div class="govuk-grid-column-two-thirds"> -->
+
+      
+
+        <h2 class="govuk-heading-m  govuk-!-margin-top-6">Case details</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Date referred
+            </dt>
+            <dd class="govuk-summary-list__value">
+              2 February 2021
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Benefit type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Universal Credit
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Case type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              New referral
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Assessment centre
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Tresco House
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Case manager
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Unassigned
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m" id="consent">Consent</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Contact GP
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> Contact GP</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Outcome of recommmendation
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> Outcome of recommmendation</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m" id="specialist">Other specialist or medical contacts</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Mr B Test
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> Other medical professional name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Position held
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Consultant Rheumatologist
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> Position held</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              1 Test Hospital<br/>Test City<br/>XX11 1XX
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> address</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Phone number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              09000 000000
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">Phone number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Email address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              test.surgery@example.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden">email address</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+       
+      <!-- </div> -->
+
+    </div>
+  </div>
+</div>
+{% endblock %}
