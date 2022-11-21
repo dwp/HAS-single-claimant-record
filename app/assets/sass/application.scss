@@ -163,6 +163,8 @@ $govuk-assets-path: '/govuk/assets/';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14286;
+    position: sticky;
+    top: 0;
 }
 
 .app-subnav__section {
